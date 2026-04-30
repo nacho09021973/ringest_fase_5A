@@ -98,3 +98,10 @@ This snapshot includes the GWTC-3 HDF5 payload directory required by the Phase 5
 - `data/IGWN-GWTC3-TGR-v2-rin`
 
 Therefore the snapshot is intended to be self-contained for reproducing the Phase 5A verified20 provenance, residual, outlier, sensitivity, and width-matched controls, subject to the public-data terms of the original GWTC-3 TGR release.
+
+
+## Zenodo payload DOI
+
+The heavy GWTC-3 HDF5 payload required for full HDF5-level reproduction is archived at:
+
+https://doi.org/10.5281/zenodo.19922361

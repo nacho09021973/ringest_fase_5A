@@ -66,6 +66,8 @@ Expected size:
 
 It is distributed separately via Zenodo.
 
+Zenodo payload DOI: https://doi.org/10.5281/zenodo.19922361
+
 After downloading the payload, place it at:
 
 `data/IGWN-GWTC3-TGR-v2-rin/`
