@@ -1,0 +1,21 @@
+{
+  "script": "tools/verify_phase5a_unpaired_hdf5_provenance.py",
+  "purpose": "verify data provenance/layout for residual_220_unpaired_composition inputs",
+  "cohort_csv": "data/phase5a_tables/phase5a_gwtc3_residual_220_unpaired_expansion_verified20.csv",
+  "out_csv": "data/phase5a_tables/phase5a_gwtc3_expansion_verified20_hdf5_provenance.csv",
+  "dataset": "GWTC3_rerun_PROD1/posterior_samples",
+  "ds_required_fields": [
+    "f_t_0",
+    "tau_t_0"
+  ],
+  "kerr_required_fields": [
+    "Mf",
+    "final_spin"
+  ],
+  "n_rows": 20,
+  "n_unique_events": 20,
+  "n_layout_verified": 20,
+  "n_layout_blocked": 0,
+  "blocked_events": [],
+  "claim_level": "provenance_only_no_residual_no_physics_claim"
+}

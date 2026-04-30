@@ -1,0 +1,146 @@
+{
+  "script": "tools/phase5a_control_widthmatched_residual.py",
+  "cohort_csv": "data/phase5a_tables/phase5a_gwtc3_residual_220_unpaired_expansion_verified20.csv",
+  "out_csv": "data/phase5a_tables/phase5a_gwtc3_unpaired_220_widthmatched_control.csv",
+  "n_events": 20,
+  "formula": "Momega_R=1.5251-1.1568*(1-chi)^0.1292; f_Hz=32314*Momega_R/Mf",
+  "seed": 42,
+  "n_draw": 50000,
+  "ds_width_buckets_hz_thresholds": [
+    100.0,
+    300.0,
+    600.0
+  ],
+  "global": {
+    "full_residual": {
+      "n_events_with_value": 20,
+      "n_positive": 18,
+      "n_negative": 2,
+      "median_hz": 26.69041605245282
+    },
+    "dsband_residual": {
+      "n_events_with_value": 20,
+      "n_positive": 16,
+      "n_negative": 4,
+      "median_hz": 2.599780252257993
+    },
+    "kerrband_residual": {
+      "n_events_with_value": 20,
+      "n_positive": 18,
+      "n_negative": 2,
+      "median_hz": 20.41400167483812
+    }
+  },
+  "by_ds_width_bucket": {
+    "full": {
+      "moderate_100_300Hz": {
+        "n_events": 1,
+        "n_with_residual": 1,
+        "n_positive": 0,
+        "n_negative": 1,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": -38.82671601702506
+      },
+      "narrow_lt100Hz": {
+        "n_events": 8,
+        "n_with_residual": 8,
+        "n_positive": 8,
+        "n_negative": 0,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": 5.127659889010577
+      },
+      "prior_dominated_gte600Hz": {
+        "n_events": 8,
+        "n_with_residual": 8,
+        "n_positive": 8,
+        "n_negative": 0,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": 187.857467822013
+      },
+      "wide_300_600Hz": {
+        "n_events": 3,
+        "n_with_residual": 3,
+        "n_positive": 2,
+        "n_negative": 1,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": 17.136506922153657
+      }
+    },
+    "dsband": {
+      "moderate_100_300Hz": {
+        "n_events": 1,
+        "n_with_residual": 1,
+        "n_positive": 0,
+        "n_negative": 1,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": -6.742617582295452
+      },
+      "narrow_lt100Hz": {
+        "n_events": 8,
+        "n_with_residual": 8,
+        "n_positive": 7,
+        "n_negative": 1,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": 2.0365868371681444
+      },
+      "prior_dominated_gte600Hz": {
+        "n_events": 8,
+        "n_with_residual": 8,
+        "n_positive": 7,
+        "n_negative": 1,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": 3.4690903639844777
+      },
+      "wide_300_600Hz": {
+        "n_events": 3,
+        "n_with_residual": 3,
+        "n_positive": 2,
+        "n_negative": 1,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": 4.362864600685697
+      }
+    },
+    "kerrband": {
+      "moderate_100_300Hz": {
+        "n_events": 1,
+        "n_with_residual": 1,
+        "n_positive": 0,
+        "n_negative": 1,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": -38.70361868151872
+      },
+      "narrow_lt100Hz": {
+        "n_events": 8,
+        "n_with_residual": 8,
+        "n_positive": 8,
+        "n_negative": 0,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": 3.3557486162164025
+      },
+      "prior_dominated_gte600Hz": {
+        "n_events": 8,
+        "n_with_residual": 8,
+        "n_positive": 8,
+        "n_negative": 0,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": 187.97139325164267
+      },
+      "wide_300_600Hz": {
+        "n_events": 3,
+        "n_with_residual": 3,
+        "n_positive": 2,
+        "n_negative": 1,
+        "n_zero_or_nan": 0,
+        "median_of_medians_hz": 8.485174803838305
+      }
+    }
+  },
+  "shape_diagnostics": {
+    "median_sigma_ratio_ds_over_kerr": 3.700887080568908,
+    "median_iqr_ratio_ds_over_kerr": 2.4954831415044954,
+    "median_cdf_ds_at_kerr_median": 0.17428305472418404,
+    "n_events_cdf_below_half": 18,
+    "n_events_cdf_above_half": 2
+  },
+  "method_caveat": "The width-matched residuals restrict DS samples to the Kerr 90% band (or Kerr to the DS band) but do not produce a joint sample-by-sample residual posterior. They are a sensitivity decomposition of the original unpaired comparison."
+}

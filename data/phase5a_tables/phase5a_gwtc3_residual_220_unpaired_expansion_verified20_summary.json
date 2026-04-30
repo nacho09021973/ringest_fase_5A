@@ -1,0 +1,108 @@
+{
+  "script": "tools/compute_phase5a_unpaired_220_residuals.py",
+  "cohort_csv": "data/phase5a_tables/phase5a_gwtc3_residual_220_unpaired_expansion_verified20.csv",
+  "provenance_csv": "data/phase5a_tables/phase5a_gwtc3_expansion_verified20_hdf5_provenance.csv",
+  "require_layout_verified": true,
+  "out_csv": "data/phase5a_tables/phase5a_gwtc3_residual_220_unpaired_expansion_verified20_results.csv",
+  "out_json": "data/phase5a_tables/phase5a_gwtc3_residual_220_unpaired_expansion_verified20_summary.json",
+  "dataset": "GWTC3_rerun_PROD1/posterior_samples",
+  "residual_type": "residual_220_unpaired_composition",
+  "jointness": "unpaired_same_event",
+  "claim_level": "exploratory_only",
+  "no_joint_residual": true,
+  "no_population_claim": true,
+  "formula": "Momega_R=1.5251-1.1568*(1-chi)^0.1292; f_Hz=32314*Momega_R/Mf",
+  "seed": 42,
+  "n_draw": 50000,
+  "near_zero_abs_hz": 5.0,
+  "n_rows": 20,
+  "n_unique_events": 20,
+  "positive_median": {
+    "count": 18,
+    "denominator": 20,
+    "events": [
+      "S170814",
+      "S170823",
+      "S190408an",
+      "S190513bm",
+      "S190519bj",
+      "S190521g",
+      "S190602aq",
+      "S190706ai",
+      "S190708ap",
+      "S190727h",
+      "S190828j",
+      "S190910s",
+      "S190915ak",
+      "S191109d",
+      "S191222n",
+      "S200129m",
+      "S200224ca",
+      "S200311bg"
+    ]
+  },
+  "p_residual_gt_0_gt_0p5": {
+    "count": 18,
+    "denominator": 20,
+    "events": [
+      "S170814",
+      "S170823",
+      "S190408an",
+      "S190513bm",
+      "S190519bj",
+      "S190521g",
+      "S190602aq",
+      "S190706ai",
+      "S190708ap",
+      "S190727h",
+      "S190828j",
+      "S190910s",
+      "S190915ak",
+      "S191109d",
+      "S191222n",
+      "S200129m",
+      "S200224ca",
+      "S200311bg"
+    ]
+  },
+  "negative_events": [
+    {
+      "event_id": "S170104",
+      "residual_q50_hz": -38.82671601702506,
+      "p_residual_gt_0": 0.23308
+    },
+    {
+      "event_id": "S190512at",
+      "residual_q50_hz": -79.31437852770077,
+      "p_residual_gt_0": 0.35168
+    }
+  ],
+  "near_zero_events": [
+    {
+      "event_id": "S190521g",
+      "residual_q50_hz": 1.606164064263556,
+      "p_residual_gt_0": 0.76614
+    },
+    {
+      "event_id": "S190602aq",
+      "residual_q50_hz": 2.4096197888270225,
+      "p_residual_gt_0": 0.59158
+    },
+    {
+      "event_id": "S190910s",
+      "residual_q50_hz": 3.1389926403598736,
+      "p_residual_gt_0": 0.69638
+    },
+    {
+      "event_id": "S191109d",
+      "residual_q50_hz": 0.1129499379995238,
+      "p_residual_gt_0": 0.51136
+    }
+  ],
+  "largest_positive_outlier": {
+    "event_id": "S190708ap",
+    "residual_q50_hz": 368.24348616253906,
+    "p_residual_gt_0": 0.7323
+  },
+  "method_caveat": "Exploratory unpaired same-event composition only: DS f_t_0/tau_t_0 and Kerr Mf/final_spin are sampled from separate posteriors, so this is not a joint sample-by-sample residual posterior and supports no population claim."
+}

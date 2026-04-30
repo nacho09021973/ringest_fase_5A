@@ -1,0 +1,55 @@
+{
+  "script": "tools/audit_phase5a_unpaired_220_outliers.py",
+  "results_csv": "data/phase5a_tables/phase5a_gwtc3_residual_220_unpaired_expansion_verified20_results.csv",
+  "provenance": {
+    "checked": true,
+    "path": "data/phase5a_tables/phase5a_gwtc3_expansion_verified20_hdf5_provenance.csv",
+    "layout_verified_events": 20
+  },
+  "out_csv": "data/phase5a_tables/phase5a_gwtc3_unpaired_220_outlier_audit.csv",
+  "out_json": "data/phase5a_tables/phase5a_gwtc3_unpaired_220_outlier_audit_summary.json",
+  "claim_level": "exploratory_audit_only",
+  "n_events_audited": 11,
+  "top_n": 5,
+  "near_zero_abs_hz": 5.0,
+  "thresholds": {
+    "broad_DS_frequency": "relative_f_obs_width > 0.5",
+    "broad_residual_interval": "relative_residual_width > 5.0"
+  },
+  "top_positive_outliers": [
+    "S190708ap",
+    "S190915ak",
+    "S170814",
+    "S190727h",
+    "S190408an"
+  ],
+  "negative_controls": [
+    "S170104",
+    "S190512at"
+  ],
+  "near_zero": [
+    "S190910s",
+    "S190602aq",
+    "S190521g",
+    "S191109d"
+  ],
+  "n_broad_DS_frequency": 7,
+  "broad_DS_frequency_events": [
+    "S190708ap",
+    "S190915ak",
+    "S170814",
+    "S190727h",
+    "S190408an",
+    "S170104",
+    "S190512at"
+  ],
+  "n_broad_residual_interval": 5,
+  "broad_residual_interval_events": [
+    "S190408an",
+    "S190512at",
+    "S190910s",
+    "S190602aq",
+    "S191109d"
+  ],
+  "method_caveat": "Exploratory audit of already computed unpaired same-event residual summaries only; no residuals are recalculated, no plots are made, and this is not a joint posterior or population-level physical claim."
+}

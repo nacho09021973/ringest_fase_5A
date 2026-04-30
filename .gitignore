@@ -1,0 +1,15 @@
+# Heavy public HDF5 payloads: upload separately to Zenodo
+data/IGWN-GWTC3-TGR-v2-rin/
+
+# Reproduction runs / local outputs
+runs/
+
+# Python / cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
