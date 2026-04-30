@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#07111f"/>
+  <circle cx="1220" cy="250" r="190" fill="#0d2038" stroke="#1f6feb" stroke-width="3" opacity="0.85"/>
+  <circle cx="1220" cy="250" r="62" fill="#02050a"/>
+  <path d="M190 610 C 270 530, 350 700, 430 610 S 590 520, 670 610 S 830 700, 910 610 S 1070 520, 1150 610 S 1310 700, 1390 610"
+        fill="none" stroke="#58a6ff" stroke-width="7" opacity="0.95"/>
+  <path d="M220 720 C 390 500, 580 500, 760 720" fill="none" stroke="#ffb454" stroke-width="8" opacity="0.85"/>
+  <path d="M470 720 C 560 610, 660 610, 750 720" fill="none" stroke="#58a6ff" stroke-width="8" opacity="0.95"/>
+  <text x="110" y="145" font-family="Inter, Arial, Helvetica, sans-serif" font-size="82" font-weight="800" fill="#f0f6fc">RINGEST Phase 5A</text>
+  <text x="112" y="220" font-family="Inter, Arial, Helvetica, sans-serif" font-size="40" font-weight="600" fill="#c9d1d9">GWTC-3 Ringdown Frequency Residuals</text>
+  <text x="112" y="275" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" fill="#8b949e">Kerr QNM Predictions · pyRing DS Posteriors · Prior-Shape Bias Control</text>
+
+  <rect x="105" y="345" width="1020" height="150" rx="22" fill="#0d2038" stroke="#30363d" stroke-width="2"/>
+  <text x="145" y="405" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#ffb454">Main result</text>
+  <text x="145" y="458" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" fill="#f0f6fc">Apparent positive residual asymmetry is largely explained</text>
+  <text x="145" y="500" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" fill="#f0f6fc">by DS prior-shape / posterior-width mismatch.</text>
+
+  <text x="220" y="770" font-family="Inter, Arial, Helvetica, sans-serif" font-size="28" fill="#ffb454">broad DS posterior</text>
+  <text x="510" y="770" font-family="Inter, Arial, Helvetica, sans-serif" font-size="28" fill="#58a6ff">narrow Kerr reference</text>
+
+  <text x="110" y="835" font-family="Inter, Arial, Helvetica, sans-serif" font-size="26" fill="#8b949e">Verified cohort: 20 events · Exploratory methodological audit · PHASE5A_CLOSED_AS_PRIOR_SHAPE_CONTROL</text>
+</svg>

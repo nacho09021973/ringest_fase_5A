@@ -1,6 +1,6 @@
 # RINGEST Phase 5A
 
-![RINGEST Phase 5A social preview](docs/social_preview.png)
+![RINGEST Phase 5A social preview](docs/social_preview.svg)
 
 Reproducible methodological audit of an apparent positive frequency-residual asymmetry in GWTC-3 ringdown data.
 
@@ -107,4 +107,4 @@ Zenodo should contain the heavy HDF5 payload required for full HDF5-level reprod
 
 ## Preview
 
-![RINGEST Phase 5A social preview](docs/social_preview.png)
+![RINGEST Phase 5A social preview](docs/social_preview.svg)
