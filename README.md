@@ -1,5 +1,7 @@
 # RINGEST Phase 5A
 
+![RINGEST Phase 5A social preview](docs/social_preview.png)
+
 Reproducible methodological audit of an apparent positive frequency-residual asymmetry in GWTC-3 ringdown data.
 
 ## Status
