@@ -13,3 +13,6 @@ __pycache__/
 .DS_Store
 .vscode/
 .idea/
+
+# Local Zenodo upload artifact
+ringest_phase5a_gwtc3_tgr_hdf5_payload.tar.gz
