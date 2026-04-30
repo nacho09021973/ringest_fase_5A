@@ -83,25 +83,24 @@ It does provide a reproducible methodological audit showing that unpaired DS-vs-
 - Do not mix with O4 or DS_2mode without separate audit.
 - Do not mix smoke events into the main verified20 result except as a separate methodological check.
 
-## Local data dependency
-
-This snapshot uses a local symlink for the GWTC-3 HDF5 payloads:
-
-- `data/IGWN-GWTC3-TGR-v2-rin -> /home/ignac/laboratorio_ringest/data/IGWN-GWTC3-TGR-v2-rin`
-
-The scripts and phase5a tables are contained in this snapshot, but full HDF5 reproducibility requires that local payload directory or an equivalent copy.
-
-## Payload policy
-
-This snapshot includes the GWTC-3 HDF5 payload directory required by the Phase 5A scripts:
-
-- `data/IGWN-GWTC3-TGR-v2-rin`
-
-Therefore the snapshot is intended to be self-contained for reproducing the Phase 5A verified20 provenance, residual, outlier, sensitivity, and width-matched controls, subject to the public-data terms of the original GWTC-3 TGR release.
-
-
 ## Zenodo payload DOI
 
 The heavy GWTC-3 HDF5 payload required for full HDF5-level reproduction is archived at:
 
 https://doi.org/10.5281/zenodo.19922361
+
+
+## Payload distribution policy
+
+The GitHub repository intentionally excludes the heavy GWTC-3 HDF5 payload directory:
+
+- `data/IGWN-GWTC3-TGR-v2-rin/`
+
+Full HDF5-level reproduction requires downloading the Zenodo payload archive:
+
+- `ringest_phase5a_gwtc3_tgr_hdf5_payload.tar.gz`
+- `https://doi.org/10.5281/zenodo.19922361`
+
+After extraction, the expected path is:
+
+- `data/IGWN-GWTC3-TGR-v2-rin/`

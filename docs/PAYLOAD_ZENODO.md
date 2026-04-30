@@ -22,3 +22,7 @@ data/IGWN-GWTC3-TGR-v2-rin/rin/rin_S170104_pyring_Kerr_220_0M.h5
 Once the payload is in place, rerun the Phase 5A scripts from the repository root.
 
 Zenodo DOI: https://doi.org/10.5281/zenodo.19922361
+
+Zenodo payload file:
+
+ringest_phase5a_gwtc3_tgr_hdf5_payload.tar.gz
